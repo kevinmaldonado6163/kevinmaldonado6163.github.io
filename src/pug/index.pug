@@ -45,6 +45,9 @@ html(lang='en')
                             a.nav-link(href='#team') Equipo
                         li.nav-item
                             a.nav-link(href='#train') Entrenamiento
+                        li.nav-item
+                            a.nav-link(href='#join') Anotate
+
         // Masthead
         header.masthead
             .container
@@ -57,7 +60,7 @@ html(lang='en')
             .container
                 .text-center
                     // h2.section-heading.text-uppercase Services
-                    p Somos el primer equipo sudamericanos LGBTQ+ de Waterpolo.
+                    p Somos un equipo de waterpolo amateur, basados en Buenos Aires – el primer equipo LGBTQ+ de Sudamérica. Formamos parte de la Asociación Argentina Deportistas por la Diversidad.
 
                 //.row.text-center
                     .col-md-4
@@ -236,16 +239,48 @@ html(lang='en')
                                 img.mx-auto.rounded-circle(src='assets/img/team/bruno-lazzaro.png', alt='...')
                                 h4 Bruno Lázzaro
                                 p.text-muted Director Técnico
+                    .col-lg-4
+                        .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/rodrigo-cubiles.jpeg', alt='...')
+                                h4 Rodrigo Cubiles
+                                p.text-muted Entrenador
+                    
+                .row
+                    .col-lg-4
+                        .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/schadia.jpeg', alt='...')
+                                h4 Schadia Castillo
+                                p.text-muted Asistente
+                    .col-lg-4
+                        .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/lucho.jpeg', alt='...')
+                                h4 Luciano Roussy
+                                p.text-muted Asistente
+                    .col-lg-4
+                        .team-member
+                                img.mx-auto.rounded-circle(src='assets/img/team/sebas.jpeg', alt='...')
+                                h4 Sebastián Sueldo
+                                p.text-muted Asistente
+                            
                 //.row
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
         // Team
         section#train.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Entrenamiento
-                    p Entrenamos miércoles por la noche en el Club Estrella de Maldonado, y domingos por la tarde en Parque Sarmiento 
+            .text-center
+                h2.section-heading.text-uppercase Entrenamiento
+                .row
+                    .col-lg-6
+                            p Entrenamos en el Club Villa Sahores, en Villa del Parque - CABA.
+                    .col-lg-6
+                        img.half-image(src='assets/img/sahores.jpeg', alt='...')
+        
+        section#join.page-section.bg-light
+            .text-center
+                h2.section-heading.text-uppercase ¡Anotate!
+                p Contactate con nosotros a través de #[a(href="https://www.instagram.com/dogoswaterpolo/") Instagram] o a nuestro mail #[a(href="mailto:dogoswaterpolo@gmail.com") dogoswaterpolo@gmail.com]
+        
         // Clients
         //div.py-5
             .container
