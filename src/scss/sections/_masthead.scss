@@ -7,11 +7,11 @@ header.masthead {
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
-    background-image: url("../assets/img/dogos-equipo-4.jpeg");
+    background-image: url("../assets/img/banner.jpeg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
 
     .masthead-subheading {
         font-size: 1.5rem;
