@@ -56,7 +56,31 @@ html(lang='en')
                 // a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More
 
         // Services
-        section#about.page-section
+        section#about
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-6.order-lg-2
+                        .p-5
+                            img.img-fluid.rounded-circle(src='assets/img/bruno-dt.jpeg', alt='...')
+                    .col-lg-6.order-lg-1
+                        .p-5
+                            h2.display-4 Quiénes somos
+                            p
+                                | Somos un equipo de waterpolo amateur, basados en Buenos Aires – el primer equipo LGBTQ+ de Sudamérica. Formamos parte de la Asociación Argentina Deportistas por la Diversidad.
+        section#train
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-6
+                        .p-5
+                            img.img-fluid.rounded-circle(src='assets/img/sahores-lucho.jpeg', alt='...')
+                    .col-lg-6
+                        .p-5
+                            h2.display-4 Entrenamiento
+                            p
+                                | Entrenamos los lunes, de 20:30 a 22hs, en el Ateneo Popular Versalles, y los sábados, de 18:30 a 20:30hs, en el Club Villa Sahores. La primera media hora es entrenamiento funcional, y el resto en la pileta.
+
+
+        //section#about.page-section
             .container
                 .text-center
                     // h2.section-heading.text-uppercase Services
@@ -266,21 +290,19 @@ html(lang='en')
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
-        // Team
-        section#train.page-section.bg-light
-            .text-center
-                h2.section-heading.text-uppercase Entrenamiento
-                .row
-                    .col-lg-6
-                            p Entrenamos en el Club Villa Sahores, en Villa del Parque - CABA.
-                    .col-lg-6
-                        img.half-image(src='assets/img/sahores.jpeg', alt='...')
-        
-        section#join.page-section.bg-light
-            .text-center
-                h2.section-heading.text-uppercase ¡Anotate!
-                p Contactate con nosotros a través de #[a(href="https://www.instagram.com/dogoswaterpolo/") Instagram] o a nuestro mail #[a(href="mailto:dogoswaterpolo@gmail.com") dogoswaterpolo@gmail.com]
-        
+        section#join
+            .container.px-5
+                .row.gx-5.align-items-center
+                    .col-lg-6.order-lg-2
+                        .p-5
+                            img.img-fluid.rounded-circle(src='assets/img/suplentes-poseidon.jpeg', alt='...')
+                    .col-lg-6.order-lg-1
+                        .p-5
+                            h2.display-4 ¡Anotate!
+                            p
+                                | Contactate con nosotros a través de #[a(href="https://www.instagram.com/dogoswaterpolo/") Instagram] o a nuestro mail #[a(href="mailto:dogoswaterpolo@gmail.com") dogoswaterpolo@gmail.com]
+
+
         // Clients
         //div.py-5
             .container
