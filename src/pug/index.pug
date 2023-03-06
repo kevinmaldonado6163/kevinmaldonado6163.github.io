@@ -2,7 +2,12 @@ doctype html
 html(lang='en')
 
     head
-
+        script(async, src="https://www.googletagmanager.com/gtag/js?id=G-SHC8WMLE92")
+        script.
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SHC8WMLE92');
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='')
@@ -29,7 +34,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand(href='#page-top')
-                    // img(src='assets/img/navbar-logo.svg', alt='...')
+                    img.navbar-image(src='assets/img/navbar-logo.svg', alt='...')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
@@ -246,17 +251,6 @@ html(lang='en')
                     h2.section-heading.text-uppercase Nuestro Equipo
                     h3.section-subheading.text-muted
                 .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/german-vaisman.jpeg', alt='...')
-                            h4 German Vaisman
-                            p.text-muted Director General
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Instagram')
-                                i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')
-                                i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')
-                                i.fab.fa-linkedin-in
 
                     .col-lg-4
                         .team-member
@@ -267,14 +261,26 @@ html(lang='en')
                         .team-member
                                 img.mx-auto.rounded-circle(src='assets/img/team/rodrigo-cubiles.jpeg', alt='...')
                                 h4 Rodrigo Cubiles
-                                p.text-muted Entrenador
-                    
-                .row
+                                p.text-muted Profesor
                     .col-lg-4
                         .team-member
                                 img.mx-auto.rounded-circle(src='assets/img/team/schadia.jpeg', alt='...')
                                 h4 Schadia Castillo
-                                p.text-muted Asistente
+                                p.text-muted Profesora
+
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/german-vaisman.jpeg', alt='...')
+                            h4 German Vaisman
+                            p.text-muted Asistente
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Instagram')
+                                i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')
+                                i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')
+                                i.fab.fa-linkedin-in
+
                     .col-lg-4
                         .team-member
                                 img.mx-auto.rounded-circle(src='assets/img/team/lucho.jpeg', alt='...')
