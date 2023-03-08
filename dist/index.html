@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SHC8WMLE92"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-SHC8WMLE92');
+        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -20,7 +29,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><!-- img(src='assets/img/navbar-logo.svg', alt='...')--></a>
+                <a class="navbar-brand" href="#page-top"><img class="navbar-image" src="assets/img/logo-letras-blanco.png" alt="..." /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -30,8 +39,9 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Quiénes somos</a></li>
                         <!--li.nav-itema.nav-link(href='#portfolio') Portfolio-->
                         <!--li.nav-itema.nav-link(href='#about') About-->
-                        <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
                         <li class="nav-item"><a class="nav-link" href="#train">Entrenamiento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Equipo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#join">Anotate</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,41 +50,69 @@
         <header class="masthead">
             <div class="container">
                 <!-- .masthead-subheading Welcome To Our Studio!-->
-                <div class="masthead-heading text-uppercase">Dogos Waterpolo</div>
+                <div class="masthead-heading text-uppercase"></div>
                 <!-- a.btn.btn-primary.btn-xl.text-uppercase(href='#services') Tell Me More-->
             </div>
         </header>
         <!-- Services-->
-        <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <!-- h2.section-heading.text-uppercase Services-->
-                    <p>Somos el primer equipo sudamericanos LGBTQ+ de Waterpolo.</p>
+        <section id="about">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/bruno-dt.jpeg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">Quiénes somos</h2>
+                            <p>¡Bienvenido! Somos un equipo de waterpolo amateur, basados en Buenos Aires –el primer equipo LGBTQ+ de Sudamérica– abierto a todo el que quiera participar, más allá de su género, orientación sexual o experiencia previa. Formamos parte de la Asociación Argentina Deportistas por la Diversidad.</p>
+                        </div>
+                    </div>
                 </div>
-                <!--.row.text-center.col-md-4
-    span.fa-stack.fa-4x
-        i.fas.fa-circle.fa-stack-2x.text-primary
-        i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
-    h4.my-3 E-Commerce
-    p.text-muted
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-.col-md-4
-    span.fa-stack.fa-4x
-        i.fas.fa-circle.fa-stack-2x.text-primary
-        i.fas.fa-laptop.fa-stack-1x.fa-inverse
-    h4.my-3 Responsive Design
-    p.text-muted
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-.col-md-4
-    span.fa-stack.fa-4x
-        i.fas.fa-circle.fa-stack-2x.text-primary
-        i.fas.fa-lock.fa-stack-1x.fa-inverse
-    h4.my-3 Web Security
-    p.text-muted
-        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
--->
             </div>
         </section>
+        <section id="train">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/sahores-lucho.jpeg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Entrenamiento</h2>
+                            <p>Entrenamos los miércoles, de 20:30 a 22hs, en el Ateneo Popular Versalles, y los sábados, de 18:30 a 20:30hs, en el Club Villa Sahores. La primera media hora es entrenamiento funcional, y el resto en la pileta.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--section#about.page-section.container
+    .text-center
+        // h2.section-heading.text-uppercase Services
+        p Somos un equipo de waterpolo amateur, basados en Buenos Aires – el primer equipo LGBTQ+ de Sudamérica. Formamos parte de la Asociación Argentina Deportistas por la Diversidad.
+
+    //.row.text-center
+        .col-md-4
+            span.fa-stack.fa-4x
+                i.fas.fa-circle.fa-stack-2x.text-primary
+                i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+            h4.my-3 E-Commerce
+            p.text-muted
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        .col-md-4
+            span.fa-stack.fa-4x
+                i.fas.fa-circle.fa-stack-2x.text-primary
+                i.fas.fa-laptop.fa-stack-1x.fa-inverse
+            h4.my-3 Responsive Design
+            p.text-muted
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+        .col-md-4
+            span.fa-stack.fa-4x
+                i.fas.fa-circle.fa-stack-2x.text-primary
+                i.fas.fa-lock.fa-stack-1x.fa-inverse
+            h4.my-3 Web Security
+            p.text-muted
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+-->
         <!-- Portfolio Grid-->
         <!--section#portfolio.page-section.bg-light.container
     .text-center
@@ -213,9 +251,32 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/bruno-lazzaro.png" alt="..." />
+                            <h4>Bruno Lázzaro</h4>
+                            <p class="text-muted">Director Técnico</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/rodrigo-cubiles.jpeg" alt="..." />
+                            <h4>Rodrigo Cubiles</h4>
+                            <p class="text-muted">Profesor</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/schadia.jpeg" alt="..." />
+                            <h4>Schadia Castillo</h4>
+                            <p class="text-muted">Profesora</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/german-vaisman.jpeg" alt="..." />
                             <h4>German Vaisman</h4>
-                            <p class="text-muted">Director General</p>
+                            <p class="text-muted">Asistente</p>
                             <!--a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Instagram')i.fab.fa-twitter-->
                             <!--a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand Facebook Profile')i.fab.fa-facebook-f-->
                             <!--a.btn.btn-dark.btn-social.mx-2(href='#!', aria-label='Parveen Anand LinkedIn Profile')i.fab.fa-linkedin-in
@@ -224,9 +285,16 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/bruno-lazzaro.png" alt="..." />
-                            <h4>Bruno Lázzaro</h4>
-                            <p class="text-muted">Director Técnico</p>
+                            <img class="mx-auto rounded-circle" src="assets/img/team/lucho.jpeg" alt="..." />
+                            <h4>Luciano Roussy</h4>
+                            <p class="text-muted">Asistente</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/sebas.jpeg" alt="..." />
+                            <h4>Sebastián Sueldo</h4>
+                            <p class="text-muted">Asistente</p>
                         </div>
                     </div>
                 </div>
@@ -235,12 +303,23 @@
         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.-->
             </div>
         </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="train">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Entrenamiento</h2>
-                    <p>Entrenamos miércoles por la noche en el Club Estrella de Maldonado, y domingos por la tarde en Parque Sarmiento</p>
+        <section id="join">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="assets/img/suplentes-poseidon.jpeg" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">¡Anotate!</h2>
+                            <p>
+                                Contactate con nosotros a través de
+                                <a href="https://www.instagram.com/dogoswaterpolo/">Instagram</a>
+                                o a nuestro mail
+                                <a href="mailto:dogoswaterpolo@gmail.com">dogoswaterpolo@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
