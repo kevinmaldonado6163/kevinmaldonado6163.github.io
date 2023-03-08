@@ -24,7 +24,7 @@
         text-transform: uppercase;
 
         img {
-            height: 1.5rem;
+            height: 10rem;
             display: none;
         }
     }
@@ -62,9 +62,9 @@
             transition: font-size 0.3s ease-in-out;
 
             img {
-                height: 2rem;
+                height: 3rem;
                 transition: height 0.3s ease-in-out;
-                display: block;
+                display: none;
             }
         }
 
@@ -79,7 +79,8 @@
 
                 svg,
                 img {
-                    height: 1.5rem;
+                    height: 3rem;
+                    display: block;
                 }
             }
         }
